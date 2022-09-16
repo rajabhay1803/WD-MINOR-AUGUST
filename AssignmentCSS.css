@@ -1,0 +1,149 @@
+
+
+/* * giving the background a lenear gradient */
+body{
+    background-image: linear-gradient(60deg,#ff9933,#ffffff, #138808);
+}
+/* *making a semi-transparent header and footer */
+ 
+.header{
+    width: 100%;
+    height: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(75, 75, 199, 0.5);
+    
+}
+
+.footer{
+    width: 100%;
+    height: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(75, 75, 199, 0.5);
+    bottom: 0%;
+}
+.contact{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.footer img{
+    height: 40px;
+}
+
+/* * logo "Historic Places of India" design */
+.box2 {
+    background-color: rgba(0,0,0,.1);
+    color: #fff;
+    border-radius: 75px;
+    padding: 30px;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
+    margin-top: 20px;
+    display: flexbox;
+}
+.box2 img{
+    height: 80px;
+    width: 80px;
+}
+
+/* * giving the main div a grid property so that the page can be responsive */
+.maindiv {
+    display: grid;
+    grid-template-rows: auto;
+    /* 'giving it a repeat function to create 4 columns for 1 fraction each */
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+  
+.card {
+    height: auto; 
+    width: auto; 
+    margin: 50px; 
+    padding: 5px;
+     
+    box-shadow: 5px 5px 15px black;
+}
+
+
+/* * adding a hover effect to the card so that whenever the mouse is hovered over the card, the shadow is increased and it gives a floating effect */
+.card:hover{
+    box-shadow: 10px 10px 25px black;
+}
+
+.card img{
+    padding: 5px;
+    height:300px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+    
+}
+
+.card-title{
+    text-shadow: 1px 1px grey;
+}
+
+
+
+
+    
+.btn{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* * adding a hover effect to the button so that it changes color everytime the mouse is hovered over it. */
+.btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: .5s;
+    border-color: black;
+}
+
+
+
+h1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 70px;
+    text-align: center;
+}
+
+
+/*  * to make the site responsive */
+/* * changing the layout and text sizes of all the elements at different screen sizes.  */
+@media (max-width: 768px){
+    h1{font-size: 30px;}
+    .header,.footer{height: auto; width: auto;}
+    .footer img{height: auto;}
+    .box2{height: auto; width: auto; margin: auto;}
+    .card img{height: auto;}
+    .maindiv{grid-template-columns: auto;}
+}
+@media (max-width: 1212px){
+    h1{font-size: 30px;}
+    .header,.footer{height: auto; width: auto;}
+    .footer img{height: auto;}
+    .box2{height: auto; width: auto; margin: auto;}
+    .card img{height: auto;}
+    .maindiv{grid-template-columns: auto;}  
+}
+@media (max-width: 393px){
+    h1{font-size: 30px;}
+    .header,.footer{height: auto; width: auto;}
+    .footer img{height: auto;}
+    .box2{height: auto; width: auto; margin: auto;}
+    .card img{height: auto;}
+    .maindiv{grid-template-columns: auto;}  
+}
+
